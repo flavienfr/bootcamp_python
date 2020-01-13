@@ -3,6 +3,6 @@ languages = {
     'Ruby': 'Yukihiro Matsumoto',
     'PHP': 'Rasmus Lerdorf',
     }
-print("Python was created by ", languages["Python"],sep='')
-print("Ruby was created by ", languages["Ruby"], sep='')
-print("PHP was created by ", languages["PHP"], sep='')
+
+for name in languages:
+	print(name, " was created by ", languages[name],sep='')
