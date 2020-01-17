@@ -14,5 +14,6 @@ class ImageProcessor:
 		plt.show()
 
 imp = ImageProcessor()
-arr = imp.load("resources/42AI.png")
+arr = imp.load("resources/small_img_1.png")
+print(arr)
 imp.display(arr)
