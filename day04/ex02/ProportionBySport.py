@@ -1,6 +1,6 @@
 def proportionBySport(df, year, sport, gender):
-	df = df.drop_duplicates('Name')
 	df = df[df.Year == year]
+	df = df.drop_duplicates('Name', keep='first')#diff between first and last
 	total = len(df[df.Sex == gender])
 	dfs = df[df.Sex == gender]
 	part = len(dfs[dfs.Sport == sport])
