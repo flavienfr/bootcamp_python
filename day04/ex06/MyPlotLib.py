@@ -13,11 +13,10 @@ class MyPlotLib:
 		plt.tight_layout()
 		plt.show()
 	
-	def density(data, features):
+	def density(self, data, features):
 		data = data.fillna(data.median())
 		lst = data[features[0]].values.tolist()
-
-		pass
+		sns.kdeplot(lst)
 
 	def pair_plot(data, features):
 		pass
